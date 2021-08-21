@@ -1,7 +1,68 @@
 .App {
+  display: flex;
+  grid-template-columns: 50px 1fr;
+  height: 100vh;
+  
+
+}
+
+.container_sidebar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+}
+
+.container_main {
+  color: white;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  flex: 1;
+  overflow: auto;
+  padding-left: 20px;
+
+}
+
+.navigation, .socialmedia {
   text-align: center;
 }
 
+.navigation {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.home{
+  display: flex;
+  color: orange;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.home_container {
+  display: flex;
+  padding: 40px;
+
+}
+
+.home_detail { 
+  width: 50%;
+}
+
+.myButton {
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+  cursor: pointer;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,6 +89,70 @@
   color: #61dafb;
 }
 
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+
+
+.aboutme_paragraph {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  max-width: 600px;
+  padding: 20px;
+  text-align: left;
+
+}
+
+.title {
+  color: orange;
+}
+
+.mylink {
+  color: orange;
+  text-decoration: none;
+  cursor: pointer;
+}
+.kiri_kanan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid white; */
+  padding: 10px 20px;
+
+}
+
+label {
+  margin: 20px 0 10px 0
+}
+
+.input {
+  background-color: rgb(202, 202, 202);
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +161,16 @@
     transform: rotate(360deg);
   }
 }
+
+@media (min-width: 576px) { 
+  
+
+ }
+
+@media (min-width: 768px) { }
+
+@media (min-width: 992px) { }
+
+@media (min-width: 1200px) {  }
+
+@media (min-width: 1400px) { }
